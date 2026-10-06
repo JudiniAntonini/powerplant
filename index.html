@@ -1,0 +1,40 @@
+# Power Plant Annual Operation Schedule
+
+12-Year Operating Schedule and Operational Performance Overview
+
+Select Year Generating unitEquipment Activity typeMaintenance typeStatus
+
+## 12-Year Overview
+
+## 12-Year Operation Timeline
+
+## Annual Operation Schedule
+
+## Performance Charts
+
+## Grid Demand Reference
+
+## Maintenance Schedule
+
+## Generating Unit Schedule
+
+## Detailed Annual Data
+
+## Annual and 12-Year Cumulative Statistics
+
+## Notes and Calculation Methodology
+
+Calculation Method
+
+`Operating Hours = Total Available Hours − Downtime Hours` (used only when not supplied directly)\
+`Availability Factor = Available Hours / Total Hours × 100`\
+`Capacity Factor = Actual Energy / (Installed Capacity × Total Hours) × 100`\
+`Average Annual Generation = 12-Year Generation / 12` (only when all 12 years carry generation)\
+Downtime = planned + maintenance + unplanned + other outage hours. Enter **0** for a category with no downtime; a blank cell means unknown, so any metric needing it shows N/A.\
+With several units, hours are summed as unit-hours and capacity factor uses Σ(unit capacity × hours). Average capacity factor and availability are the mean of the yearly values that could be calculated.
+
+Data format
+
+Edit `plantData` in the Data section of the script, or use **Load data** (JSON or CSV). Schedule items use `startYear, startMonth, endYear, endMonth` (months default to 1 and 12; `year` is shorthand for a single year). Performance rows use `year, unit, totalHours, operatingHours, plannedOutageHours, maintenanceHours, unplannedOutageHours, otherDowntimeHours, availableHours, expectedGenerationMWh, actualGenerationMWh, status, activities, notes`. Excel data: save each sheet as CSV.
+
+Load plant data Choose a JSON file or paste JSON/CSV. Nothing leaves your browser.
